@@ -30,9 +30,7 @@ namespace Fight
         public Physics physics;
 
         public AnimationManger a { get; set; }
-        animation a1;
-
-        private KeyboardState lastbutton;
+     
 
         public Fighter(Folders id, basekeys keys, Vector2 pos) : base(pos, 0)
         {
@@ -46,9 +44,8 @@ namespace Fight
             this.Pos = pos;
             this.fcaingright = true;
             this.physics = new Physics(Pos);
-            this.a1 = a1;
+           
             this.a = new AnimationManger(Thedict.dic[id][this.status]);
-            this.lastbutton = Keyboard.GetState();
             keys.whoami(this);
 
 
@@ -59,27 +56,28 @@ namespace Fight
         {
             if (status == status.hurt && Pos.Y >= 500 && a._animation.index >= a._animation.frames - 1)
                 status = status.standing;
-            if(status!=status.hurt&&status!=status.jumping&&status!=status.jumpattack)
-            {  if (keys.Light())
+          
+            if (status != status.hurt && status != status.jumping && status != status.jumpattack && status !=status.block)
+            {
+                if (keys.Light())
                 {
-                    if (status == status.jumping || status == status.jumpattack)
-                        jumpattack();
-                    else
                         quickattack();
                 }
-               if (keys.Heavy())
-                heavy();
-               if (keys.Left())
-                walkleft();
-               if (keys.Right())
-                walkright();
-               if (keys.block())
-                block();
+                if (keys.Heavy())
+                    heavy();
+                if (keys.Left())
+                    walkleft();
+                    
+                if (keys.Right())
+                    walkright();
+                if (keys.block())
+                    block();
+               
             }
-            
 
-           
-            if (status != status.jumping&&status!=status.jumpattack)
+
+
+            if (status != status.jumping && status != status.jumpattack)
             {
                 if (keys.Up())
                 {
@@ -94,41 +92,40 @@ namespace Fight
                     }
                 }
             }
+
+            if (status == status.light)
+            {
+                if (a._animation.index >= a._animation.frames - 1)
+                {
+                    status = status.standing;
+                }
+            }
+
+            if (status == status.heavy)
+            {
+                if (a._animation.index >= a._animation.frames - 1)
+                {
+                    status = status.standing;
+                }
+            }
             
-            if(status==status.light)
+            if (status == status.jumping||status==status.jumpattack)
             {
-                if (a._animation.index >= a._animation.frames - 1)
+                if (status != status.jumpattack)
                 {
-                    status = status.standing;
+                    if (keys.Light())
+                        jumpattack();
                 }
-            }
-           
-           if(status==status.heavy)
-           {
-              if (a._animation.index >= a._animation.frames - 1)
-              {
-                        status = status.standing;
-              }
-           }
-            if (status == status.jumpattack)
-            {
-                if (a._animation.index >= a._animation.frames - 1)
-                {
-                    status = status.standing;
-                }
-            }
-            if (status==status.jumping)
-            {
-                if (keys.Light())
-                    jumpattack();
                 if (Pos.Y >= 500)
                     status = status.standing;
             }
             if (!keys.Left() && !keys.Right() && !keys.Up() && !keys.Light()
                  && !keys.Heavy() && !keys.block() && status != status.jumping
-                 && status != status.hurt && status != status.heavy && status != status.block)
-                status = status.standing;
-
+                 && status != status.hurt && status != status.heavy )
+            {
+                if(status!=status.jumpattack)
+                     status = status.standing;
+            }
 
             if (status != status.hurt)
             {
@@ -139,14 +136,14 @@ namespace Fight
                 if (!fcaingright)
                 {
                     if (physics.ma.Y > 0)
-                        a.rot =MathHelper.Pi- Math.Atan2(physics.ma.X, physics.ma.Y);
+                        a.rot = MathHelper.Pi - Math.Atan2(physics.ma.X, physics.ma.Y);
                     else
                         a.rot = 0;
                 }
                 else
                 {
                     if (physics.ma.Y > 0)
-                        a.rot = MathHelper.Pi- Math.Atan2(physics.ma.X, physics.ma.Y);
+                        a.rot = MathHelper.Pi - Math.Atan2(physics.ma.X, physics.ma.Y);
                     else
                         a.rot = 0;
                 }
@@ -156,11 +153,9 @@ namespace Fight
 
             a.pos = physics.Pos;
             Pos = physics.Pos;
-            if (keys.block())
-                block();
             a.play(Thedict.dic[id][status]);
             a.update(G.gameTime);
-            lastbutton = Keyboard.GetState();
+           
         }
         public void walkright()
         {

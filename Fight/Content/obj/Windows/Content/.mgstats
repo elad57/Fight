@@ -2,7 +2,7 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "C:/Users/eladh/Fight/Fight/Content/fighters/ryu.png","C:/Users/eladh/Fight/Fight/Content/bin/Windows/Content/fighters/ryu.xnb","TextureProcessor","Texture2DContent",786138,19046293,1.547417
 "C:/Users/eladh/Fight/Fight/Content/fighters/ryu/backwordstep.png","C:/Users/eladh/Fight/Fight/Content/bin/Windows/Content/fighters/ryu/backwordstep.xnb","TextureProcessor","Texture2DContent",19128,191449,0.5485354
 "C:/Users/eladh/Fight/Fight/Content/fighters/ryu/backwordstepmask.png","C:/Users/eladh/Fight/Fight/Content/bin/Windows/Content/fighters/ryu/backwordstepmask.xnb","TextureProcessor","Texture2DContent",8969,191449,0.0219755
-"C:/Users/eladh/Fight/Fight/Content/fighters/ryu/block.png","C:/Users/eladh/Fight/Fight/Content/bin/Windows/Content/fighters/ryu/block.xnb","TextureProcessor","Texture2DContent",11051,117813,0.3560485
+"C:/Users/eladh/Fight/Fight/Content/fighters/ryu/block.png","C:/Users/eladh/Fight/Fight/Content/bin/Windows/Content/fighters/ryu/block.xnb","TextureProcessor","Texture2DContent",8020,117813,0.6851736
 "C:/Users/eladh/Fight/Fight/Content/fighters/ryu/blockmask.png","C:/Users/eladh/Fight/Fight/Content/bin/Windows/Content/fighters/ryu/blockmask.xnb","TextureProcessor","Texture2DContent",4557,117813,0.0149935
 "C:/Users/eladh/Fight/Fight/Content/fighters/ryu/forwordstepmask.png","C:/Users/eladh/Fight/Fight/Content/bin/Windows/Content/fighters/ryu/forwordstepmask.xnb","TextureProcessor","Texture2DContent",8338,169573,0.1635626
 "C:/Users/eladh/Fight/Fight/Content/fighters/ryu/heavy.png","C:/Users/eladh/Fight/Fight/Content/bin/Windows/Content/fighters/ryu/heavy.xnb","TextureProcessor","Texture2DContent",17330,208909,0.1446133

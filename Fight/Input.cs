@@ -38,6 +38,7 @@ namespace Fight
             this.right = right;
             this.light = light;
             this.heavy = heavy;
+            this.block1 = block;
         }
 
 
@@ -201,18 +202,18 @@ namespace Fight
             left = false;
             right = false;
             #endregion
-            Vector2 distance = target.Pos - me.Pos;
-            if(target.status!=status.standing)
-            {
-                lastmove.Enqueue(target.status);
-                if(lastmove.Count>=20)
-                {
-                    lastmove.Dequeue();
-                }
-            }
-            walktowrds(distance);
-            if (distance.Length() < G.ScaleCircle(target.a._animation.body[target.a._animation.index], target.a.scale).radius + G.ScaleCircle(Thedict.dic[me.id][status.light].head[1], me.a.scale).radius&&target.status!=status.hurt)
-                light = true;
+            //Vector2 distance = target.Pos - me.Pos;
+            //if(target.status!=status.standing)
+            //{
+            //    lastmove.Enqueue(target.status);
+            //    if(lastmove.Count>=20)
+            //    {
+            //        lastmove.Dequeue();
+            //    }
+            //}
+            //walktowrds(distance);
+            //if (distance.Length() < G.ScaleCircle(target.a._animation.body[target.a._animation.index], target.a.scale).radius + G.ScaleCircle(Thedict.dic[me.id][status.light].head[1], me.a.scale).radius&&target.status!=status.hurt)
+            //    light = true;
         }
         public void walktowrds(Vector2 distance)
         {

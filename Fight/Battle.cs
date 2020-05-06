@@ -193,7 +193,7 @@ namespace Fight
             }
             if (f2.status == status.jumpattack)
             {
-                if (G.ScaleCircle(f2.a._animation.body[f2.a._animation.index], f2.a.scale).radius + G.ScaleCircle(f1.a._animation.head[f1.a._animation.index], f1.a.scale).radius >= Vector2.Distance(f1.Pos/*+f1.a._animation.head[f1.a._animation.index].center*/, f2.Pos/*+ f2.a._animation.head[f2.a._animation.index].center*/) * 2)
+                if (G.ScaleCircle(f2.a._animation.body[f2.a._animation.index], f2.a.scale).radius + G.ScaleCircle(f1.a._animation.head[f1.a._animation.index], f1.a.scale).radius >= Vector2.Distance(f1.Pos/*+f1.a._animation.head[f1.a._animation.index].center*/, f2.Pos/*+ f2.a._animation.head[f2.a._animation.index].center*/))
                 {
                     if (f1.status != status.block)
                     {
@@ -215,7 +215,7 @@ namespace Fight
             }
             if (f1.status == status.jumpattack)
             {
-                if (G.ScaleCircle(f1.a._animation.body[f1.a._animation.index], f1.a.scale).radius + G.ScaleCircle(f2.a._animation.body[f2.a._animation.index], f2.a.scale).radius >= Vector2.Distance(f1.Pos/*+f1.a._animation.head[f1.a._animation.index].center*/, f2.Pos/*+ f2.a._animation.head[f2.a._animation.index].center*/) * 2)
+                if (G.ScaleCircle(f1.a._animation.body[f1.a._animation.index], f1.a.scale).radius + G.ScaleCircle(f2.a._animation.body[f2.a._animation.index], f2.a.scale).radius >= Vector2.Distance(f1.Pos/*+f1.a._animation.head[f1.a._animation.index].center*/, f2.Pos/*+ f2.a._animation.head[f2.a._animation.index].center*/) )
                 {
                     if (f2.status != status.block)
                     {

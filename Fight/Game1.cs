@@ -17,7 +17,7 @@ namespace Fight
         GraphicsDeviceManager graphics;
         Battle btl;
         SpriteBatch spriteBatch;
-        PlayerKeys keys1 = new PlayerKeys(Keys.A, Keys.D, Keys.W, Keys.S,Keys.X,Keys.C,Keys.Space);
+        PlayerKeys keys1 = new PlayerKeys(Keys.A, Keys.D, Keys.W, Keys.S,Keys.K,Keys.J,Keys.L);
         PlayerKeys keys2 = new PlayerKeys(Keys.Left, Keys.Right, Keys.Up, Keys.Down, Keys.K, Keys.L, Keys.J);
         PadKeys pad = new PadKeys();
         public static event DlgUpdate Event_Update;

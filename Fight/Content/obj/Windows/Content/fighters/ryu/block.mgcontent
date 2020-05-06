@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/block.png</SourceFile>
-  <SourceTime>2020-05-04T17:43:57.3568294+03:00</SourceTime>
+  <SourceTime>2020-05-06T19:19:01.0530538+03:00</SourceTime>
   <DestFile>C:/Users/eladh/Fight/Fight/Content/bin/Windows/Content/fighters/ryu/block.xnb</DestFile>
-  <DestTime>2020-05-04T17:51:56.2463742+03:00</DestTime>
+  <DestTime>2020-05-06T19:19:28.9658562+03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T18:35:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
