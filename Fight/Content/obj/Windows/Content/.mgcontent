@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/backwordstep.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/backwordstepmask.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/block.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/blockmask.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/forwordstepmask.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/heavy.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/heavymask.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/hurt.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/hurtmask.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/jumpattack.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/jumpattackmask.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/jumping.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/jumpingmask.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/quickattack.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/quickattackmask.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/ryuforwordstep.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/ryustanding.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/standingmask.png</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/File.xml</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/font.spritefont</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/stages/sumo.jpg</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File>fighters/ryu/light.png</File>
+    <File>fighters/ryu/lightmask.png</File>
+    <File>fighters/ryu/forwordstep.png</File>
+    <File>fighters/ryu/standing.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

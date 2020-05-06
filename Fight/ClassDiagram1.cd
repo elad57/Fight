@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Fight.Battle" Collapsed="true">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAgAICIAAAAAAAAAAAAAQxAAAAAAAAgAEIAA=</HashCode>
+      <FileName>Battle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.Fighter" Collapsed="true">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAgIChAAgAAAgAAAAACQgQAgAABQAQAEAgA=</HashCode>
+      <FileName>Fighter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.Ifocus" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ifocus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.Physics" Collapsed="true">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEEAAAAAAIAAAAgAAAAAAAAQCIAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>physics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.basekeys" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAIAAAAAAAAAAAAAAgAAAAAAAAAACACAAAAABAI=</HashCode>
+      <FileName>Input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.PlayerKeys" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAIAAAACAAAAAAAAAgAAAAIIAAAACACAAgABhAI=</HashCode>
+      <FileName>Input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.PadKeys" Collapsed="true">
+    <Position X="1.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAIAAAAAAAAAAAAAAgAAAAAAAACACICAAAAABAI=</HashCode>
+      <FileName>Input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.Botkeys" Collapsed="true">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAIAAAAAAAAAAAAAAgAAAAAAAAAACACAAAAABAI=</HashCode>
+      <FileName>Input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.G" Collapsed="true">
+    <Position X="2.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAChAAAAAgCBAQAAAACAEAACAKgEAAAAAAEAAA=</HashCode>
+      <FileName>G.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.Game1" Collapsed="true">
+    <Position X="3.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEEEACAAAAAwAAAACAAAAAAAAAAAgAUAAAAAAAAAQ=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.Program" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fight.Thedict" Collapsed="true">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Thedict.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Fight.status" Collapsed="true">
+    <Position X="8.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAABAAAAAAAAAIAAAAAAIAAAAAAACgAAABBAA=</HashCode>
+      <FileName>Fighter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Fight.Folders" Collapsed="true">
+    <Position X="8.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fighter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Fight.DlgUpdate" Collapsed="true">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Fight.Dlgdraw" Collapsed="true">
+    <Position X="2" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
