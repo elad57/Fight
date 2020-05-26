@@ -31,24 +31,30 @@ namespace Fight
             View = view;
             Pos = Focus[0].Pos;
         }
-        public void UpdateMat(List<Ifocus> vectors)
+        public void UpdateMat(Ifocus f1,Ifocus f2)
         {
-            Focus = vectors;
-            Vector2 v = Vector2.Lerp(Pos, Focus[0].Pos, 0.03f);
-            if (this != null)
-            {
-                v = Vector2.Lerp(new Vector2(0), new Vector2(0), 0.03f);
+            // Focus = vectors;
 
-            }
-            Vector2 sum = new Vector2();
-            float Dis = 0;
-            sum = v + Focus[0].Pos;
-            sum /= 2;
-            Dis = Vector2.Distance(v, Focus[0].Pos);
-            Pos = Vector2.Lerp(Pos, sum, 0.03f);
+
+            // Vector2 sum = new Vector2();
+            // float Dis = 0;
+            // sum = Focus[0].Pos+Focus[1].Pos;
+            // sum /= 2;
+            // Pos = Vector2.Lerp(Pos, sum, 0.03f);
+            //// Zoom = MathHelper.Clamp(100f / Dis, 0.7f, 1.2f);
+            // Mat = Matrix.CreateTranslation(-Pos.X, -Pos.Y, 0)*
+            // /*Matrix.CreateScale(Zoom) **/ Matrix.CreateTranslation(View.Width / 2, View.Height / 2, 0);
+            
+            Vector2 firstcenter = new Vector2(f1.Pos.X, f1.Pos.Y);
+            Vector2 seccondcenter = new Vector2(f2.Pos.X, f2.Pos.Y);
+            Vector2 sum = (firstcenter + seccondcenter) / 2;
+            float Dis = Vector2.Distance(firstcenter,seccondcenter);
             Zoom = MathHelper.Clamp(100f / Dis, 0.7f, 1.2f);
-            Mat = Matrix.CreateTranslation(-Pos.X, -Pos.Y, 0)*
-            Matrix.CreateScale(Zoom) * Matrix.CreateTranslation(View.Width / 2, View.Height / 2, 0);
+            sum.X += View.Width/2;
+            Mat = Matrix.CreateScale(1,1,0) *
+                Matrix.CreateTranslation(-sum.X, -sum.Y, 0) * Matrix.CreateTranslation(View.Width / 2, View.Height / 2, 0);
+
+
         }
         public void draw()
         {

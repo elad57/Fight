@@ -31,10 +31,10 @@ namespace Fight
         public void calcpower(Vector2 power)
         {
             ma = Gravity;
-            if (Pos.Y >= 500)
+            if (Pos.Y >= 700)
             {
                 ma += Normal;
-                Pos.Y = 500;
+                Pos.Y = 700;
                 horipower.X = 0;
 
             }

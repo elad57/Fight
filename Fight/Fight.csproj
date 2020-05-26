@@ -45,15 +45,21 @@
     <Compile Include="AnimationManger.cs" />
     <Compile Include="Attack.cs" />
     <Compile Include="Battle.cs" />
+    <Compile Include="button.cs" />
     <Compile Include="Camera.cs" />
+    <Compile Include="Component.cs" />
     <Compile Include="Fighter.cs" />
     <Compile Include="G.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Ifocus.cs" />
     <Compile Include="Input.cs" />
+    <Compile Include="menu.cs" />
+    <Compile Include="online.cs" />
     <Compile Include="physics.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="state.cs" />
+    <Compile Include="statistics.cs" />
     <Compile Include="Thedict.cs" />
   </ItemGroup>
   <ItemGroup>

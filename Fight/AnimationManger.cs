@@ -19,14 +19,16 @@ namespace Fight
         public double rot;
         public Vector2 pos;
         public Vector2 scale;
+        Color color;
 
 
-        public AnimationManger(animation a)
+        public AnimationManger(animation a,Color c)
         {
 
             _animation = a;
             scale = new Vector2(5);
             rot = 0;
+            color = c;
 
         }
         public void play(animation a)
@@ -58,13 +60,13 @@ namespace Fight
         public virtual void drawleft()
         {
             G.sb.Begin();
-            G.sb.Draw(_animation.texture, pos, null,_animation.rec[_animation.index], null,(float)rot, new Vector2(5), Color.White, SpriteEffects.None, 1);
+            G.sb.Draw(_animation.texture, pos, null,_animation.rec[_animation.index], null,(float)rot, new Vector2(5), color, SpriteEffects.None, 1);
             G.sb.End();
         }
         public virtual void drawright()
         {
             G.sb.Begin();
-            G.sb.Draw(_animation.texture, pos,null, _animation.rec[_animation.index], null,(float)rot,new Vector2(5),Color.White,SpriteEffects.FlipHorizontally,1);
+            G.sb.Draw(_animation.texture, pos,null, _animation.rec[_animation.index], null,(float)rot,new Vector2(5),color,SpriteEffects.FlipHorizontally,1);
             G.sb.End();
         }
     }

@@ -4,6 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/eladh/Fight/Fight/Content/backgroundM.jpg</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/button.png</File>
     <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu.png</File>
     <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/backwordstep.png</File>
     <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/backwordstepmask.png</File>
@@ -25,9 +27,13 @@
     <File>C:/Users/eladh/Fight/Fight/Content/fighters/ryu/standingmask.png</File>
     <File>C:/Users/eladh/Fight/Fight/Content/File.xml</File>
     <File>C:/Users/eladh/Fight/Fight/Content/font.spritefont</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/red.jpg</File>
+    <File>C:/Users/eladh/Fight/Fight/Content/redbutton.png</File>
     <File>C:/Users/eladh/Fight/Fight/Content/stages/sumo.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File>blackbutton.png</File>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
@@ -46,6 +52,8 @@
     <File>fighters/ryu/lightmask.png</File>
     <File>fighters/ryu/forwordstep.png</File>
     <File>fighters/ryu/standing.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

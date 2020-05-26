@@ -47,3 +47,8 @@ C:\Users\eladh\Fight\Fight\bin\Windows\x86\Debug\Content\fighters\ryu\block.xnb
 C:\Users\eladh\Fight\Fight\bin\Windows\x86\Debug\Content\fighters\ryu\blockmask.xnb
 C:\Users\eladh\Fight\Fight\bin\Windows\x86\Debug\Content\fighters\ryu\jumpattack.xnb
 C:\Users\eladh\Fight\Fight\bin\Windows\x86\Debug\Content\fighters\ryu\jumpattackmask.xnb
+C:\Users\eladh\Fight\Fight\bin\Windows\x86\Debug\Content\red.xnb
+C:\Users\eladh\Fight\Fight\bin\Windows\x86\Debug\Content\button.xnb
+C:\Users\eladh\Fight\Fight\bin\Windows\x86\Debug\Content\blackbutton.xnb
+C:\Users\eladh\Fight\Fight\bin\Windows\x86\Debug\Content\redbutton.xnb
+C:\Users\eladh\Fight\Fight\bin\Windows\x86\Debug\Content\backgroundM.xnb

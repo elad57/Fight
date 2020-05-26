@@ -25,6 +25,15 @@ namespace Fight
         public static string stages = "stages/";
         public static Camera cam;
         public static Battle btl;
+        public static PlayerKeys keys1;
+        public static PlayerKeys keys2;
+        public static Botkeys Botkeys;
+        public static Dumbkeys dumbkeys;
+        public static OnlineState connectionState;
+        public static OnlineGame onlineGame;
+        public static ContentManager content;
+        public static menu menu;
+        public static Viewport viewport;
 
 
 

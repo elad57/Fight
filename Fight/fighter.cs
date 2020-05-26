@@ -12,27 +12,28 @@ namespace Fight
 {
     enum status { standing, forwordstep, backwordstep, jumping, light, heavy, hurt, block, jumpattack }
     enum Folders { ryu }
+    
     class Fighter : Ifocus
     {
-        public Folders id { get; set; }
+        public Folders id { get;private set; }
         //public Dictionary<string,Animation> sprite { get; set; }
 
         public status status { get; set; }
-        private float hp { get; set; }
+        public float hp { get;  set; }
         public Vector2 speed { get; private set; }
-        public basekeys keys { get; set; }
-        private Vector2 jumppower { get; set; }
-        public Vector2 wallleft { get; set; }
-        public Vector2 wallright { get; set; }
+        public basekeys keys { get;  set; }
+        public Vector2 jumppower { get; private set; }
+        public Vector2 wallleft { get; private set; }
+        public Vector2 wallright { get; private set; }
 
-        public bool fcaingright { get; set; }
+        public bool fcaingright { get;  set; }
         public Vector2 Pos;
-        public Physics physics;
+        public Physics physics { get; private set; }
 
-        public AnimationManger a { get; set; }
-     
+        public AnimationManger a { get; private set; }
+        public statistics stats { get; set; }
 
-        public Fighter(Folders id, basekeys keys, Vector2 pos) : base(pos, 0)
+        public Fighter(Folders id, basekeys keys, Vector2 pos,Color c) : base(pos, 0)
         {
 
             this.id = id;
@@ -44,20 +45,23 @@ namespace Fight
             this.Pos = pos;
             this.fcaingright = true;
             this.physics = new Physics(Pos);
-           
-            this.a = new AnimationManger(Thedict.dic[id][this.status]);
+            this.stats = new statistics();
+            this.a = new AnimationManger(Thedict.dic[id][this.status],c);
             keys.whoami(this);
-
+           
 
         }
 
 
         public void update()
         {
+            #region recover from hurt
             if (status == status.hurt && Pos.Y >= 500 && a._animation.index >= a._animation.frames - 1)
                 status = status.standing;
-          
-            if (status != status.hurt && status != status.jumping && status != status.jumpattack && status !=status.block)
+            #endregion
+
+            #region netural input
+            if (status != status.hurt && status != status.jumping && status != status.jumpattack)
             {
                 if (keys.Light())
                 {
@@ -75,8 +79,9 @@ namespace Fight
                
             }
 
+            #endregion
 
-
+            #region jumping input
             if (status != status.jumping && status != status.jumpattack)
             {
                 if (keys.Up())
@@ -92,7 +97,9 @@ namespace Fight
                     }
                 }
             }
+            #endregion
 
+            #region attack animation end
             if (status == status.light)
             {
                 if (a._animation.index >= a._animation.frames - 1)
@@ -108,7 +115,9 @@ namespace Fight
                     status = status.standing;
                 }
             }
-            
+            #endregion
+
+            #region jumpattack
             if (status == status.jumping||status==status.jumpattack)
             {
                 if (status != status.jumpattack)
@@ -119,14 +128,19 @@ namespace Fight
                 if (Pos.Y >= 500)
                     status = status.standing;
             }
+            #endregion
+
+            #region no input
             if (!keys.Left() && !keys.Right() && !keys.Up() && !keys.Light()
                  && !keys.Heavy() && !keys.block() && status != status.jumping
-                 && status != status.hurt && status != status.heavy )
+                 && status != status.hurt && status != status.heavy&&status!=status.light )
             {
                 if(status!=status.jumpattack)
                      status = status.standing;
             }
+            #endregion
 
+            #region hurt rotation
             if (status != status.hurt)
             {
                 a.rot = 0;
@@ -148,14 +162,19 @@ namespace Fight
                         a.rot = 0;
                 }
             }
+            #endregion
+
+            #region physics
             physics.Pos = Pos;
             physics.update();
-
             a.pos = physics.Pos;
             Pos = physics.Pos;
+            #endregion
+
+            #region plat animation
             a.play(Thedict.dic[id][status]);
             a.update(G.gameTime);
-           
+            #endregion
         }
         public void walkright()
         {
@@ -201,6 +220,7 @@ namespace Fight
             else
             {
                 status = status.light;
+                stats.quickattack++;
             }
         }
         public void heavy()
@@ -216,16 +236,19 @@ namespace Fight
             else
             {
                 status = status.heavy;
+                stats.kicks++;
             }
         }
         public void block()
         {
             status = status.block;
+            stats.desfens++;
 
         }
         public void jumpattack()
         {
-            status = status.jumpattack; 
+            status = status.jumpattack;
+            stats.jumpattack++;
         }
 
 

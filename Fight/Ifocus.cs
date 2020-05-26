@@ -12,7 +12,7 @@ namespace Fight
     class Ifocus
     {
         public Vector2 Pos { get; }
-        public float Rot { get; }
+        public float Rot { get; set; }
 
         public Ifocus(Vector2 pos,float rot)
         {
